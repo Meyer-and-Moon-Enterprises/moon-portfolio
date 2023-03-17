@@ -28,6 +28,10 @@ body {
   color: white;
 }
 
+.whiteFont {
+  color: white;
+}
+
 .spacer {
   height: 4rem;
 }
@@ -42,4 +46,9 @@ body {
   background-color: black;
   color: white;
   border-color: #2e2e2e;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(30, 30, 30);
+  color: white;
 }

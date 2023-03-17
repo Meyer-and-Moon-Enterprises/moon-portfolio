@@ -15,12 +15,24 @@ const NavBar = () => {
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='me-auto'></Nav>
           <Nav>
-            {/* <Nav.Link className={styles.bgBlackTextWhite} href='#home'>
+            <Nav.Link className={`blackBackground`} href='#home'>
               Home
-            </Nav.Link> */}
-            <Nav.Link className={`blackBackground`} href='/work'>
-              Work
             </Nav.Link>
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" style={{color: 'white'}} role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Work
+              </a>
+              <ul 
+                className="dropdown-menu border border-dark"
+                style={{backgroundColor: '#2e2e2e', color: 'white'}}
+                >
+                <li className='rounded hoverEffect'><a className="dropdown-item whiteFont" href="#">Singlefile Technologies</a></li>
+                <li className='rounded hoverEffect'><a className="dropdown-item whiteFont" href="#">IBM Whitewater</a></li>
+                <li className='rounded hoverEffect'><a className="dropdown-item whiteFont" href="#">IBM Grassboots</a></li>
+                <li className='rounded hoverEffect'><a className="dropdown-item whiteFont" href="#">Design Guide</a></li>
+                <li className='rounded hoverEffect'><a className="dropdown-item whiteFont" href="#">Energy Report</a></li>
+              </ul>
+            </li> 
             <Nav.Link className={`blackBackground`} href='/about'>
               About
             </Nav.Link>
