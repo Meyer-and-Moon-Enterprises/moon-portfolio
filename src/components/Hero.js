@@ -1,0 +1,40 @@
+import * as React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+
+const Hero = () => {
+  return (
+    <Container className={`blackBackground p-0`} fluid>
+      <Container 
+        className={`hero w-100 m-0`}
+        style={{
+          height: 'calc(100vh - 3.5rem)',
+          backgroundImage: 'url(/images/hero-background.jpg)',
+          backgroundRepeat: 'no-repeat',
+          backgroundColor: 'black',
+          backgroundSize: 'cover',
+        }}
+        fluid>
+        <Container className='h-100'>
+          <Row className='h-75 align-items-center justify-content-center'>
+            <div className={`col-8 text-light`}>
+              <div style={{fontSize: '4.5rem'}}>Hi, I’m Jesse</div>
+              <div style={{height: '6px', borderTop: '6px solid white', width: '18rem'}}></div>
+              <div 
+                className={`pt-3`}
+                style={{fontSize: '1.6rem'}}>
+                I am a Senior Product Designer, expert facilitator and cat
+                herder. Currently based out of the greater Seattle area and
+                looking for my next role. Welcome to my portfolio site,
+                check-ch-check-check-check-ch-check it out.
+              </div>
+            </div>
+            <div className='col-4'></div>
+          </Row>
+          <Row className='h-25'></Row>
+        </Container>
+      </Container>
+    </Container>
+  );
+};
+
+export default Hero;
