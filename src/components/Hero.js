@@ -7,7 +7,7 @@ const Hero = () => {
       <Container 
         className={`hero w-100 m-0`}
         style={{
-          height: 'calc(100vh - 3.5rem)',
+          height: '100vh', //calc(100vh - 3.5rem)
           backgroundImage: 'url(/images/hero-background.jpg)',
           backgroundRepeat: 'no-repeat',
           backgroundColor: 'black',
@@ -16,7 +16,7 @@ const Hero = () => {
         fluid>
         <Container className='h-100'>
           <Row className='h-75 align-items-center justify-content-center'>
-            <div className={`col-8 text-light`}>
+            <div className={`col-md-8 text-light`}>
               <div style={{fontSize: '4.5rem'}}>Hi, I’m Jesse</div>
               <div style={{height: '6px', borderTop: '6px solid white', width: '18rem'}}></div>
               <div 
