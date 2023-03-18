@@ -10,4 +10,4 @@ jobs:
         with:
           # ⚠️ The provided token needs permission for admin write:org
           token: ${{ secrets.DELETE_ENVIRONMENT_TOKEN }}
-          environment: Production
+          environment: Preview
