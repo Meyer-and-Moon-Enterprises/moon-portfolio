@@ -1,9 +1,6 @@
 name: Set deployements to inactive
 
-on:
-  delete:
-    branches-ignore:
-      - main
+on: workflow_dispatch
 
 jobs:
   delete:
