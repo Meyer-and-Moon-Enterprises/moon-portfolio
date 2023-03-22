@@ -2,15 +2,11 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 
 export default function NavBar () {
   return (
-    <Navbar
-      // collapseOnSelect
-      // expand='lg'
-      className={`blackBackground`}
-      style={{ height: '3.5rem' }}
-      variant='dark'
-    >
+    <Navbar className={`blackBackground`} style={{ height: '3.5rem' }} variant='dark'>
       <Container>
-        <Navbar.Brand href='#home'>GENUINE JESSE</Navbar.Brand>
+        <Navbar.Brand href='#home'>
+          GENUINE JESSE
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='me-auto'></Nav>

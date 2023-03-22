@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-const Hero = () => {
+export default function Hero () {
   return (
     <Container className={`blackBackground p-0`} fluid>
       <Container 
@@ -36,5 +36,3 @@ const Hero = () => {
     </Container>
   );
 };
-
-export default Hero;

@@ -2,12 +2,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 export default function AboutComponent () {
   return (
-    <Container
-      className={`blackBackground h-100`}
-      fluid
-    >
+    <Container className={`blackBackground h-100`} fluid>
       <Container>
-        <Row className={`spacer`}></Row>
+        <Row className={`spacer`} />
         <Row className={`pt-3 pb-5`}>
           <Col className='d-flex flex-column justify-content-between'>
             <Row>
@@ -24,12 +21,7 @@ export default function AboutComponent () {
             </Row>
             <Row className='d-flex flex-row justify-content-between flex-grow-1 align-items-center'>
               <Col className='d-flex justify-content-between flex-row'>
-                <div 
-                  className={``}
-                  style={{
-                    borderTop: '2px solid #2e2e2e',
-                    width: '40%',
-                  }}
+                <div className={``} style={{borderTop: '2px solid #2e2e2e', width: '40%',}}
                   >
                   <p className='pt-3 h6'>MY SKILL SET</p>
                   <ul className='list-unstyled pt-3'>
@@ -45,13 +37,7 @@ export default function AboutComponent () {
                     <li>Cross-functional team leadership Facilitation</li>
                   </ul>
                 </div>
-                <div 
-                  className={``}
-                  style={{
-                    borderTop: '2px solid #2e2e2e',
-                    width: '40%',
-                  }}
-                  >
+                <div className={``} style={{borderTop: '2px solid #2e2e2e', width: '40%',}}>
                   <p className='pt-3 h6'>INTERESTS</p>
                   <ul className='list-unstyled pt-3'>
                     <li>Psychology</li>
@@ -77,7 +63,7 @@ export default function AboutComponent () {
             </div>
           </Col>
         </Row>
-        <Row className={`spacer`}></Row>
+        <Row className={`spacer`} />
         <Row className='pt-5'>
           <Col>
             <p className='h2'>CONTACT ME</p>
@@ -93,73 +79,18 @@ export default function AboutComponent () {
           <Col>
             <form>
               <label className={``}>Name*</label>
-              <div className='d-flex justify-content-between'>
-                <div 
-                  className={``}
-                  style={{width: '49.5%'}}
-                  >
-                  <input
-                    id='firstName'
-                    className={`form-control`}
-                    required
-                  ></input>
-                  <label
-                    htmlFor='firstName'
-                    className={`form-label`}
-                    style={{fontSize: '13px'}}
-                  >
-                    First Name
-                  </label>
-                </div>
-                <div 
-                  className={``}
-                  style={{width: '49.5%'}}
-                  >
-                  <input
-                    id='lastName'
-                    className={`form-control`}
-                    required
-                  ></input>
-                  <label
-                    htmlFor='lastName'
-                    className={`form-label`}
-                    style={{fontSize: '13px'}}
-                  >
-                    Last Name
-                  </label>
-                </div>
+              <div className={`w-100`}>
+                <input id='firstName' className={`form-control`} required />
               </div>
-
-              <label htmlFor='email' className={`form-label`}>
+              <label htmlFor='email' className={`form-label mt-3`}>
                 Email*
               </label>
-              <input
-                id='email'
-                className={`form-control`}
-                required
-              ></input>
-
-              <label
-                htmlFor='messageContent'
-                className={`form-label mt-3`}
-              >
+              <input id='email' className={`form-control`} required />
+              <label htmlFor='messageContent' className={`form-label mt-3`} >
                 Message*
               </label>
-              <textarea
-                id='messageContent'
-                className={`form-control`}
-                style={{height: '153px'}}
-                required
-              ></textarea>
-
-              <button
-                type='submit'
-                className={`btn btn-dark mt-3 mb-3`}
-                style={{
-                  backgroundColor: 'black',
-                  borderColor: '#2e2e2e'
-                }}
-              >
+              <textarea id='messageContent' className={`form-control`} style={{height: '153px'}} required></textarea>
+              <button type='submit' className={`btn btn-dark mt-3 mb-3`} style={{backgroundColor: 'black', borderColor: '#2e2e2e'}}>
                 Submit
               </button>
             </form>
