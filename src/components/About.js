@@ -13,7 +13,7 @@ export default function AboutComponent () {
               </picture>
             </div>
           </div>
-          <div className='col-12 d-lg-none d-flex mt-5'></div>
+          <div className='col-12 d-lg-flex mt-5'></div>
           <div className='col d-flex flex-column justify-content-between'>
             <div className='row'>
               <h1>What I’m all about</h1>
