@@ -5,7 +5,7 @@ export default function AboutComponent () {
     <Container className={`blackBackground h-100`} fluid>
       <Container>
         <Row className={`spacer`} />
-        <Row className={`pt-3 pb-5`}>
+        <Row className={`pt-3`}>
           <div className='col-12 d-lg-none d-flex justify-content-center'>
             <div className={``}>
               <picture>
@@ -90,9 +90,9 @@ export default function AboutComponent () {
             </div>
           </Col>
         </Row>
-        <Row className={`spacer`} />
-        <Row className='pt-5'>
-          <Col>
+        <Row className={`d-none d-lg-block spacer mt-5`} />
+        <Row className='mt-5'>
+          <div className='col-12 col-lg-6'>
             <p className='h2'>CONTACT ME</p>
             <p className='pt-3'>
               Thank you for stopping by and taking a look at my work! Due to the
@@ -102,8 +102,8 @@ export default function AboutComponent () {
               reach out! I’d love to take you through the nitty-gritty of it
               all.
             </p>
-          </Col>
-          <Col>
+          </div>
+          <div className='col-12 col-lg-6'>
             <form>
               <label className={``}>Name*</label>
               <div className={`w-100`}>
@@ -121,7 +121,7 @@ export default function AboutComponent () {
                 Submit
               </button>
             </form>
-          </Col>
+          </div>
         </Row>
       </Container>
     </Container>
