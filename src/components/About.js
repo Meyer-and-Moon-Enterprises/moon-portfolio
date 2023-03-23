@@ -6,8 +6,16 @@ export default function AboutComponent () {
       <Container>
         <Row className={`spacer`} />
         <Row className={`pt-3 pb-5`}>
-          <Col className='d-flex flex-column justify-content-between'>
-            <Row>
+          <div className='col-12 d-lg-none d-flex justify-content-center'>
+            <div className={``}>
+              <picture>
+                <img className='img-fluid' src='/images/about-image.png'></img>
+              </picture>
+            </div>
+          </div>
+          <div className='col-12 d-lg-none d-flex mt-5'></div>
+          <div className='col d-flex flex-column justify-content-between'>
+            <div className='row'>
               <h1>What I’m all about</h1>
               <p>
                 I love solving complex problems, improving the human condition
@@ -18,10 +26,11 @@ export default function AboutComponent () {
                 my leap to software design. I was at IBM for around 5 years
                 before making the switch my current role in Seattle.
               </p>
-            </Row>
+            </div>
             <Row className='d-flex flex-row justify-content-between flex-grow-1 align-items-center'>
-              <Col className='d-flex justify-content-between flex-row'>
-                <div className={``} style={{borderTop: '2px solid #2e2e2e', width: '40%',}}
+              <div className='col-12 d-flex justify-content-between flex-row'>
+                
+                <div className={`d-block d-lg-none mt-5`} style={{borderTop: '2px solid #2e2e2e', width: '100%',}}
                   >
                   <p className='pt-3 h6'>MY SKILL SET</p>
                   <ul className='list-unstyled pt-3'>
@@ -37,7 +46,25 @@ export default function AboutComponent () {
                     <li>Cross-functional team leadership Facilitation</li>
                   </ul>
                 </div>
-                <div className={``} style={{borderTop: '2px solid #2e2e2e', width: '40%',}}>
+              </div>
+              <Col className='d-flex justify-content-between flex-row'>
+                <div className={`d-none d-lg-block`} style={{borderTop: '2px solid #2e2e2e', width: '40%',}}
+                  >
+                  <p className='pt-3 h6'>MY SKILL SET</p>
+                  <ul className='list-unstyled pt-3'>
+                    <li>Experience design</li>
+                    <li>Product design</li>
+                    <li>User-centered design</li>
+                    <li>Design thinking Prototyping</li>
+                    <li>Creative problem solving</li>
+                    <li>Cross-discipline collaboration</li>
+                    <li>Communication (all types)</li>
+                    <li>Design leadership</li>
+                    <li>Project management</li>
+                    <li>Cross-functional team leadership Facilitation</li>
+                  </ul>
+                </div>
+                <div className={`d-none d-lg-block`} style={{borderTop: '2px solid #2e2e2e', width: '40%',}}>
                   <p className='pt-3 h6'>INTERESTS</p>
                   <ul className='list-unstyled pt-3'>
                     <li>Psychology</li>
@@ -54,11 +81,11 @@ export default function AboutComponent () {
                 </div>
               </Col>
             </Row>
-          </Col>
-          <Col className='d-flex justify-content-center'>
+          </div>
+          <Col className='d-none d-lg-block d-flex justify-content-center'>
             <div className={``}>
               <picture>
-                <img src='/images/about-image.png'></img>
+                <img className='img-fluid' src='/images/about-image.png'></img>
               </picture>
             </div>
           </Col>
