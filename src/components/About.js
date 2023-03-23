@@ -13,7 +13,7 @@ export default function AboutComponent () {
               </picture>
             </div>
           </div>
-          <div className='col-12 d-lg-flex mt-5'></div>
+          <div className='col-12 d-lg-none mt-5'></div>
           <div className='col d-flex flex-column justify-content-between'>
             <div className='row'>
               <h1>What I’m all about</h1>
@@ -82,7 +82,7 @@ export default function AboutComponent () {
               </Col>
             </Row>
           </div>
-          <Col className='d-none d-lg-block d-flex justify-content-center'>
+          <Col className='d-none d-lg-flex d-flex justify-content-center'>
             <div className={``}>
               <picture>
                 <img className='img-fluid' src='/images/about-image.png'></img>
