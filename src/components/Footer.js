@@ -21,7 +21,7 @@ export default function Footer () {
             className={`d-flex flex-row justify-content-between align-items-center`}
             style={{height: '100px'}}
           >
-            <div className={`col-3 d-none d-lg-block text-center `} style={{}}>Made remotely from Seattle</div>
+            <div className={`col-3 d-none d-lg-block text-center fst-italic `}>Made remotely from Seattle</div>
             <div className={`col-lg-3 text-center`} style={{}}>© 2023 genuinejesse.com</div>
           </Row>
         </Container>
