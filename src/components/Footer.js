@@ -10,9 +10,9 @@ export default function Footer () {
             <div
               className={`d-flex flex-row justify-content-center align-items-center`}
             >
-              <img className={`img-fluid`} style={{height: '26px', paddingRight: '4px'}} src='/images/beh.png'></img>
-              <img className={`img-fluid`} style={{height: '26px', paddingRight: '4px'}} src='/images/instagram.png'></img>
-              <img className={`img-fluid`} style={{height: '26px', paddingRight: '4px'}} src='/images/linkedin.png'></img>
+              <img className={`img-fluid`} style={{height: '26px', paddingRight: '20px'}} src='/images/beh.png'></img>
+              <img className={`img-fluid`} style={{height: '26px', paddingRight: '20px'}} src='/images/instagram.png'></img>
+              <img className={`img-fluid`} style={{height: '26px', paddingRight: '20px'}} src='/images/linkedin.png'></img>
               <img className={`img-fluid`} style={{height: '26px'}} src='/images/basketball.png'></img>
             </div>
           </Row>
