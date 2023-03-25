@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import CaseHero from '@/components/CaseHero';
+import CaseText from '@/components/CaseText';
 
 export default function designGuide() {
   return (
@@ -20,6 +21,12 @@ export default function designGuide() {
           industry='Internal branding, employee experience, workplace transformation'
         />
 
+        <CaseText
+          title="The problem"
+          description="short description"
+          listTitle="bold list title"
+          listItems={["list item 1", "list item 2", "list item 3"]}
+        />
 
       </motion.div>
     </>
