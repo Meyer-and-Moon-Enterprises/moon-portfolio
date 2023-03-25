@@ -3,14 +3,36 @@
   src: url('/fonts/IBMPlexSans-Light.ttf')
 }
 
+@font-face {
+  font-family: Plex-regular;
+  src: url('/fonts/IBMPlexSans-Regular.ttf')
+}
+
+@font-face {
+  font-family: Plex-medium;
+  src: url('/fonts/IBMPlexSans-Medium.ttf')
+}
+
+@font-face {
+  font-family: Plex-semibold;
+  src: url('/fonts/IBMPlexSans-SemiBold.ttf')
+}
+
+@font-face {
+  font-family: Plex-bold;
+  src: url('/fonts/IBMPlexSans-Bold.ttf')
+}
+
 #__next {
   min-height: 100vh;
+  background-color: black;
 }
 
 * {
   font-family: 'IBM-Plex';
   font-style: normal;
   font-weight: 300;
+
 }
 
 html {
