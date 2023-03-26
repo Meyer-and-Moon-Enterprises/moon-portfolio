@@ -123,6 +123,7 @@ export default function AboutComponent () {
             </form>
           </div>
         </Row>
+        <div className={`spacer`}></div>
       </Container>
     </Container>
   );

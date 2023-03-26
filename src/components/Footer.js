@@ -5,7 +5,7 @@ export default function Footer () {
     <>
       <Container className={`blackBackground`} fluid>
         <Container className={`blackBackground`}>
-          <Row className={`spacer`}></Row>
+          {/* <Row className={`spacer`}></Row> */}
           <Row style={{height: '100px'}}>
             <div
               className={`d-flex flex-row justify-content-center align-items-center`}

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function CaseText({ title, description, listTitle, listItems}) {
-  const [updatedDescription, setUpdatedDescription] = useState('');
+  const [updatedDescription, setUpdatedDescription] = useState(['']);
   const [updatedListTitle, setUpdatedListTitle] = useState('');
   const [updatedListItems, setUpdatedListItems] = useState('');
 
@@ -9,16 +9,19 @@ export default function CaseText({ title, description, listTitle, listItems}) {
     if (description) {
       setUpdatedDescription(() => {
         return (
-          <p className="" style={{fontFamily: 'Plex-regular', color: '#black', lineHeight: '20px', fontSize: '16px',}}>
-            {description}
-          </p>
+          description.map((item, index) => (
+            <p key={crypto.randomUUID()} className="pb-2" style={{fontFamily: 'Plex-regular', color: '#black', lineHeight: '20px', fontSize: '16px',}}>
+              {item}
+            </p>
+          ))
+
         )
       })
     }
     if (listTitle) {
       setUpdatedListTitle(() => {
         return (
-          <p className="" style={{fontFamily: 'Plex-semibold', color: '#black', lineHeight: '20px', fontSize: '16px',}}>
+          <p  key={crypto.randomUUID()} className="" style={{fontFamily: 'Plex-semibold', color: '#black', lineHeight: '20px', fontSize: '16px',}}>
             {listTitle}
           </p>
         )
@@ -29,7 +32,7 @@ export default function CaseText({ title, description, listTitle, listItems}) {
         return (
           <p className="" style={{fontFamily: 'Plex-regular', color: '#black', lineHeight: '20px', fontSize: '16px',}}>
             {listItems.map((item) => (
-              <li>{item}</li>
+              <li  key={crypto.randomUUID()} style={{ marginBottom: '7px'}}>{item}</li>
             ))}
           </p>
         )
