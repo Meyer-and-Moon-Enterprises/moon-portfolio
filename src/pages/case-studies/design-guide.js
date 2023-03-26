@@ -143,9 +143,11 @@ export default function designGuide() {
         />
 
 
-        <div className='spacer' style={{backgroundColor: 'white'}} />
+        <div className='spacer d-lg-block' style={{backgroundColor: 'white'}} />
         <div className="d-flex justify-content-center align-items-center w-100 pb-3 pt-3" style={{backgroundColor: 'white'}}>
-          <p style={{fontFace: 'Plex-regular', lineHeight: '20px', fontSize: '16px', background: 'white'}}>The above case study is personal and does not necessarily represent IBM’s positions, strategies or opinions.</p>
+          <p style={{fontFace: 'Plex-semibold', lineHeight: '20px', fontSize: '16px', background: 'white', textAlign: 'center'}}>
+            The above case study is personal and does not necessarily represent IBM’s positions, strategies or opinions.
+          </p>
         </div>
       </motion.div>
     </>

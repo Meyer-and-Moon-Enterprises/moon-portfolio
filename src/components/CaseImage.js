@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function CaseImage({ image, alt, caption, altBackgroundColor }) {
   const [mainDivStyle, setMainDivStyle] = useState();
@@ -29,8 +30,8 @@ export default function CaseImage({ image, alt, caption, altBackgroundColor }) {
       <div id="BACKGROUND_COLOR" className="mb-0" style={mainDivStyle}>
         <div className="container">
           <div className="row w-100">
-            <div className="col-12">
-              <img src={image} alt={alt} className="img-fluid"></img>
+            <div className="col-12" >
+              <img src={image} alt={alt} style={{overflow: 'hidden'}} className="img-fluid"></img>
               {newCaption}
             </div>
           </div>
