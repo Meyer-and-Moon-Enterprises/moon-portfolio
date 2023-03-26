@@ -9,7 +9,7 @@ export default function CaseText({ title, description, listTitle, listItems}) {
     if (description) {
       setUpdatedDescription(() => {
         return (
-          description.map((item, index) => (
+          description.map((item) => (
             <p key={crypto.randomUUID()} className="pb-2" style={{fontFamily: 'Plex-regular', color: '#black', lineHeight: '20px', fontSize: '16px',}}>
               {item}
             </p>
@@ -32,13 +32,33 @@ export default function CaseText({ title, description, listTitle, listItems}) {
         return (
           <p className="" style={{fontFamily: 'Plex-regular', color: '#black', lineHeight: '20px', fontSize: '16px',}}>
             {listItems.map((item) => (
-              <li  key={crypto.randomUUID()} style={{ marginBottom: '7px'}}>{item}</li>
+              <li  key={crypto.randomUUID()} style={{ marginBottom: '7px', listStylePosition: 'inside'}}>{item}</li>
             ))}
           </p>
         )
       })
     }
   }, [])
+
+//   ul {
+//   width: 16rem;
+//   border: 1px solid;
+//   list-style-type: none; /* removes the original bullets */
+//   padding: 0;
+// }
+
+// li {
+//   overflow-wrap: break-word;
+//   line-height: 1.2rem; /* Should be the same as in li::before */
+// }
+
+// li::before {
+//   content: '•';
+//   line-height: 1.2rem; /* Should be the same as in li */
+//   font-size: 1.2rem; /* Should be the same as the line-height */
+//   vertical-align: top;
+//   margin-right: 0.6rem; /* Change this to your liking 
+// }
 
   return (
     <>
