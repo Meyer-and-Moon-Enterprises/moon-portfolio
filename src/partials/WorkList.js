@@ -37,7 +37,7 @@ export default function WorkList () {
                 image='/images/ibm-cio-card.png'
                 summary='2018 - 2019  |  UX Research & Design  |  IBM'
                 headline='Internal brand unification to improve the employee experience'
-                link='#'
+                link='/case-studies/design-guide'
               />
             </div>
             <div className='col-12 col-xl-6'>
@@ -49,6 +49,7 @@ export default function WorkList () {
               />
             </div>
           </div>
+          <div className={`spacer`}></div>
         </Container>
       </Container>
     </>

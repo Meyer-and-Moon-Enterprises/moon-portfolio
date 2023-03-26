@@ -1,13 +1,17 @@
-import Navbar from '../components/Navbar';
 import AboutComponent from '../components/About';
-import Footer from '../components/Footer';
+import { motion } from 'framer-motion';
+
 
 export default function About() {
   return (
     <>
-      <Navbar />
-      <AboutComponent />
-      <Footer />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <AboutComponent />
+      </motion.div>
     </>
   );
 }
