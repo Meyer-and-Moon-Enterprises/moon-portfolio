@@ -23,6 +23,11 @@
   src: url('/fonts/IBMPlexSans-Bold.ttf')
 }
 
+@font-face {
+  font-family: Plex-italic;
+  src: url('/fonts/IBMPlexSans-Italic.ttf')
+}
+
 #__next {
   min-height: 100vh;
   background-color: black;

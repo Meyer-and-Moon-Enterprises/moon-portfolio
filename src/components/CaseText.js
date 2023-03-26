@@ -1,4 +1,42 @@
+import { useEffect, useState } from "react";
+
 export default function CaseText({ title, description, listTitle, listItems}) {
+  const [updatedDescription, setUpdatedDescription] = useState('');
+  const [updatedListTitle, setUpdatedListTitle] = useState('');
+  const [updatedListItems, setUpdatedListItems] = useState('');
+
+  useEffect(() => {
+    if (description) {
+      setUpdatedDescription(() => {
+        return (
+          <p className="" style={{fontFamily: 'Plex-regular', color: '#black', lineHeight: '20px', fontSize: '16px',}}>
+            {description}
+          </p>
+        )
+      })
+    }
+    if (listTitle) {
+      setUpdatedListTitle(() => {
+        return (
+          <p className="" style={{fontFamily: 'Plex-semibold', color: '#black', lineHeight: '20px', fontSize: '16px',}}>
+            {listTitle}
+          </p>
+        )
+      })
+    }
+    if (listItems) {
+      setUpdatedListItems(() => {
+        return (
+          <p className="" style={{fontFamily: 'Plex-regular', color: '#black', lineHeight: '20px', fontSize: '16px',}}>
+            {listItems.map((item) => (
+              <li>{item}</li>
+            ))}
+          </p>
+        )
+      })
+    }
+  }, [])
+
   return (
     <>
       <div style={{backgroundColor: 'white'}}>
@@ -10,30 +48,9 @@ export default function CaseText({ title, description, listTitle, listItems}) {
               </h1>
             </div>
             <div className="col-8">
-              {(description) ? (
-                <p className="" style={{fontFamily: 'Plex-regular', color: '#black', lineHeight: '20px', fontSize: '16px',}}>
-                  {description}
-                </p>
-              ):(
-                ''  
-              )}
-              {(listTitle) ? (
-                <p className="" style={{fontFamily: 'Plex-semibold', color: '#black', lineHeight: '20px', fontSize: '16px',}}>
-                  {listTitle}
-                </p>
-              ):(
-                ''  
-              )}
-              {(listItems) ? (
-                <p className="" style={{fontFamily: 'Plex-regular', color: '#black', lineHeight: '20px', fontSize: '16px',}}>
-                  {listItems.map((item) => (
-                    <li>{item}</li>
-                  )
-                  )}
-                </p>
-              ):(
-                ''  
-              )}
+              {updatedDescription}
+              {updatedListTitle}
+              {updatedListItems}
             </div>
           </div>
         </div>
