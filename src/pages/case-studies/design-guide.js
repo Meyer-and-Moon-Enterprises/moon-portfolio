@@ -12,6 +12,7 @@ export default function designGuide() {
         exit={{ opacity: 0 }}
       >
         <CaseHero 
+          color='#051243'
           preTitle="CIO"
           title="Design Guide" 
           subtitle="unifying the internal brand" 
@@ -73,7 +74,7 @@ export default function designGuide() {
 
         <CaseImage
           image="/images/design-guide/cs-design-guide-image02.png"
-          captiion="User personas created to represent the various diciplines within the CIO design team."
+          caption="User personas created to represent the various diciplines within the CIO design team."
         />
 
         <CaseText 

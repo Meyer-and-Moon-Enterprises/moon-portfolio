@@ -29,7 +29,7 @@ export default function WorkList () {
                 image='/images/ibm-tooling-card.png'
                 summary='2015 - 2017  |  User Experience Design  |  IBM'
                 headline='Transforming the workforce by adopting modern tooling & practices at IBM '
-                link='#'
+                link='case-studies/whitewater'
               />
             </div>
             <div className='col-12 col-xl-6'>

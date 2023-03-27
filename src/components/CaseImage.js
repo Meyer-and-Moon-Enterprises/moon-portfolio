@@ -6,7 +6,6 @@ export default function CaseImage({ image, alt, caption, altBackgroundColor }) {
   const [newCaption, setNewCaption] = useState('');
 
   useEffect(() => {
-    console.log("inside useEffect altBackgroundColor: ", altBackgroundColor)
 
     if (altBackgroundColor) {
       setMainDivStyle({background: altBackgroundColor, paddingBottom: '0px'}) 
@@ -31,7 +30,7 @@ export default function CaseImage({ image, alt, caption, altBackgroundColor }) {
         <div className="container">
           <div className="row w-100">
             <div className="col-12" >
-              <img src={image} alt={alt} style={{overflow: 'hidden'}} className="img-fluid"></img>
+              <img src={image} alt={alt} style={{backgroundColor: '#F2F4F8'}} className="img-fluid"></img>
               {newCaption}
             </div>
           </div>

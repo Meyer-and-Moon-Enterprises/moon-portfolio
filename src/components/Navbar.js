@@ -4,7 +4,6 @@ import { Router, useRouter } from 'next/router';
 
 export default function NavBar () {
   const router = useRouter();
-  console.log("current route", router.pathname)
   return (
     <Navbar className={`blackBackground sticky-top`} style={{ height: '3.5rem' }} variant='dark'>
       <Container className={``}>
