@@ -4,12 +4,13 @@ import { Router, useRouter } from 'next/router';
 
 export default function NavBar () {
   const router = useRouter();
-  console.log("current route", router.pathname)
   return (
     <Navbar className={`blackBackground sticky-top`} style={{ height: '3.5rem' }} variant='dark'>
       <Container className={``}>
         <Navbar.Brand>
-          GENUINE JESSE
+          <Link href="/work" style={{textDecoration: 'none', color: 'white'}}>
+            GENUINE JESSE
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>

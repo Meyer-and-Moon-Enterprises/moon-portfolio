@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
-import WorkList from '../partials/WorkList';
+import WorkList from '../components/WorkList';
 import { motion } from 'framer-motion';
 
 export default function Work() {

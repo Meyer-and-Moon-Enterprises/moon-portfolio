@@ -10,10 +10,10 @@ export default function Footer () {
             <div
               className={`d-flex flex-row justify-content-center align-items-center`}
             >
-              <img className={`img-fluid`} style={{height: '26px', paddingRight: '20px'}} src='/images/beh.png'></img>
-              <img className={`img-fluid`} style={{height: '26px', paddingRight: '20px'}} src='/images/instagram.png'></img>
-              <img className={`img-fluid`} style={{height: '26px', paddingRight: '20px'}} src='/images/linkedin.png'></img>
-              <img className={`img-fluid`} style={{height: '26px'}} src='/images/basketball.png'></img>
+              <a href='https://www.behance.net/jessemoon'><img className={`img-fluid`} style={{height: '26px', paddingRight: '20px'}} src='/images/beh.png'></img></a>
+              <a href='https://www.instagram.com/genuine_jesse/?hl=en'><img className={`img-fluid`} style={{height: '26px', paddingRight: '20px'}} src='/images/instagram.png'></img></a>
+              <a href='https://www.linkedin.com/in/jmmoon/'><img className={`img-fluid`} style={{height: '26px', paddingRight: '20px'}} src='/images/linkedin.png'></img></a>
+              <a href='https://dribbble.com/jessemoon'><img className={`img-fluid`} style={{height: '26px'}} src='/images/basketball.png'></img></a>
             </div>
           </Row>
           <div className={`separator`}></div>

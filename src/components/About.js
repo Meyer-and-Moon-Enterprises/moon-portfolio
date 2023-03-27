@@ -18,13 +18,13 @@ export default function AboutComponent () {
             <div className='row'>
               <h1>What I’m all about</h1>
               <p>
-                I love solving complex problems, improving the human condition
-                and understanding things holistically. My career began as an
-                industrial design consultant. The Texas Children’s Hospital was
-                my first client, together we created the immunology department’s
-                3D printing program. Afterwards, an internship at IBM motivated
-                my leap to software design. I was at IBM for around 5 years
-                before making the switch my current role in Seattle.
+                I love solving complex problems, improving the human condition and understanding things holistically.
+              </p>
+              <p>
+                My career began as an industrial design consultant. The Texas Children’s Hospital was my first client, together we created the <a style={{textDecorationColor: 'white', color: 'white'}} href='https://www.cambridge.org/core/services/aop-cambridge-core/content/view/E17D960F82D3BE1E5D9CCE1D0D29514B/S1551929515000607a.pdf/div-class-title-three-dimensional-printing-of-super-resolution-microscopy-images-div.pdf'>immunology department’s 3D printing program</a>. Afterwards, an internship at IBM motivated my leap to software design. During my roughly 5 years at IBM, my teams primarily focused on improving the employee experience and supporting <a style={{textDecorationColor: 'white', color: 'white'}} href='https://qz.com/755741/ibm-is-becoming-the-worlds-largest-design-company'>transformation efforts</a>. 
+              </p>
+              <p>
+                My curiosity to experience a different company size & structure influenced my most recent role where I joined a seed startup as employee #7. For my next role, I’m keen to join a company with a sustainable mission & values.  
               </p>
             </div>
             <Row className='d-flex flex-row justify-content-between flex-grow-1 align-items-center'>
@@ -37,7 +37,8 @@ export default function AboutComponent () {
                     <li>Experience design</li>
                     <li>Product design</li>
                     <li>User-centered design</li>
-                    <li>Design thinking Prototyping</li>
+                    <li>Design thinking</li>
+                    <li>Prototyping</li>
                     <li>Creative problem solving</li>
                     <li>Cross-discipline collaboration</li>
                     <li>Communication (all types)</li>
@@ -55,7 +56,8 @@ export default function AboutComponent () {
                     <li>Experience design</li>
                     <li>Product design</li>
                     <li>User-centered design</li>
-                    <li>Design thinking Prototyping</li>
+                    <li>Design thinking</li>
+                    <li>Prototyping</li>
                     <li>Creative problem solving</li>
                     <li>Cross-discipline collaboration</li>
                     <li>Communication (all types)</li>
@@ -68,14 +70,12 @@ export default function AboutComponent () {
                   <p className='pt-3 h6'>INTERESTS</p>
                   <ul className='list-unstyled pt-3'>
                     <li>Psychology</li>
-                    <li>Second hand books</li>
-                    <li>Continued Learning</li>
-                    <li>Composting</li>
-                    <li>Camping</li>
-                    <li>Volunteering</li>
                     <li>Sustainability</li>
-                    <li>The 4 R’s</li>
-                    <li>Growing food</li>
+                    <li>Continued Learning</li>
+                    <li>Urban Farming</li>
+                    <li>Composting</li>
+                    <li>Outdoor recreation</li>
+                    <li>Servant leadership</li>
                     <li>Community building</li>
                   </ul>
                 </div>

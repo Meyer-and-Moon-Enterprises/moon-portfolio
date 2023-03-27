@@ -12,6 +12,7 @@ export default function designGuide() {
         exit={{ opacity: 0 }}
       >
         <CaseHero 
+          color='#051243'
           preTitle="CIO"
           title="Design Guide" 
           subtitle="unifying the internal brand" 
@@ -73,7 +74,7 @@ export default function designGuide() {
 
         <CaseImage
           image="/images/design-guide/cs-design-guide-image02.png"
-          captiion="User personas created to represent the various diciplines within the CIO design team."
+          caption="User personas created to represent the various diciplines within the CIO design team."
         />
 
         <CaseText 
@@ -142,10 +143,12 @@ export default function designGuide() {
           ]}
         />
 
-
-        <div className='spacer' style={{backgroundColor: 'white'}} />
+        <div className="" style={{background: 'white', height: '20px'}}/>
+        
         <div className="d-flex justify-content-center align-items-center w-100 pb-3 pt-3" style={{backgroundColor: 'white'}}>
-          <p style={{fontFace: 'Plex-regular', lineHeight: '20px', fontSize: '16px', background: 'white'}}>The above case study is personal and does not necessarily represent IBM’s positions, strategies or opinions.</p>
+          <p style={{fontFace: 'Plex-semibold', lineHeight: '20px', fontSize: '16px', background: 'white', textAlign: 'center'}}>
+            The above case study is personal and does not necessarily represent IBM’s positions, strategies or opinions.
+          </p>
         </div>
       </motion.div>
     </>
