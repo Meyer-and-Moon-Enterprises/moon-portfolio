@@ -26,6 +26,8 @@ export default function CaseImage({ image, alt, caption, altBackgroundColor }) {
 
   return (
     <>
+      <div className="" style={{background: 'white', height: '40px'}}/>
+
       <div id="BACKGROUND_COLOR" className="" style={mainDivStyle}>
         <div className="container">
           <div className="row">

@@ -11,7 +11,7 @@ export default function CaseText({ title, description, listTitle, listItems}) {
       setUpdatedDescription(() => {
         return (
           description.map((item) => (
-            <p key={crypto.randomUUID()} className="pb-2" style={{fontFamily: 'Plex-regular', color: '#black', lineHeight: '20px', fontSize: '16px',}}>
+            <p key={crypto.randomUUID()} className="" style={{fontFamily: 'Plex-regular', color: '#black', lineHeight: '20px', fontSize: '16px',}}>
               {item}
             </p>
           ))
@@ -43,12 +43,12 @@ export default function CaseText({ title, description, listTitle, listItems}) {
 
   return (
     <>
-      <div className="" style={{background: 'white', height: '25px'}}/>
+      <div className="" style={{background: 'white', height: '50px'}}/>
 
       <div style={{backgroundColor: 'white'}}>
         <div className="container">
           <div className="row">
-            <div className="col-lg-4 pb-2">
+            <div className="col-lg-4">
               <h1 className="" style={{fontSize: '24px', lineHeight: '32px', fontFamily: 'Plex-semibold'}}>
                 {title}
               </h1>
@@ -61,6 +61,7 @@ export default function CaseText({ title, description, listTitle, listItems}) {
           </div>
         </div>
       </div>    
+
     </>
   );
 }

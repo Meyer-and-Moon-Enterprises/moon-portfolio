@@ -2,8 +2,7 @@ import Link from 'next/link';
 
 export default function WorkCard (props) {
   return (
-    <>
-          <Link className={`link-secondary`} style={{textDecoration: 'none', color: 'white'}} href={props.link}>
+    <Link className={`link-secondary`} style={{textDecoration: 'none', color: 'white'}} href={props.link}>
       <div className={`mt-5 d-flex flex-column align-items-center`}>
         <div className={`d-flex flex-column align-items-center justify-content-center`}>
           <img src={props.image} className="img-fluid"></img>
@@ -14,7 +13,6 @@ export default function WorkCard (props) {
             Read More
         </div>
       </div>
-          </Link>
-    </>
+    </Link>
   );
 }

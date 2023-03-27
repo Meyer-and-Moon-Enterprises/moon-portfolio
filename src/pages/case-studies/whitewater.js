@@ -10,6 +10,7 @@ export default function whitewater() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
+        style={{ backgroundColor: 'white' }}
       >
         <CaseHero 
           color='#1F3647'
@@ -68,7 +69,6 @@ export default function whitewater() {
           caption="Lofi ideation on the tool request flow and flow maps of editing Whitewater teams."
         />
 
-        <div className='spacer' style={{background: 'white'}}></div>
 
         <CaseImage
           image="/images/whitewater/cs-whitewater-image-03.png"
@@ -97,8 +97,17 @@ export default function whitewater() {
 
         <CaseImage
           image="/images/whitewater/cs-whitewater-image-05.png"
-          caption='After a failed merger with the Agile Academy team, our team came up with the concept of Whitewater Patterns. '
         />
+
+        <div className="container" style={{background: 'white'}}>
+          <div className="row">
+            <div className="col-12 " >
+              <p className="text-center m-0 p-4" style={{fontFamily: 'Plex-italic',backgroundColor: 'white', color: '#black', lineHeight: '20px', fontSize: '16px',}}>
+                After a failed merger with the Agile Academy team, our team came up with the concept of Whitewater Patterns. 
+              </p>
+            </div>
+          </div>
+        </div>
 
         <CaseText
           title="Evolution"
