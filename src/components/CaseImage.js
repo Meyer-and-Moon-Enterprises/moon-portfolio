@@ -26,10 +26,10 @@ export default function CaseImage({ image, alt, caption, altBackgroundColor }) {
 
   return (
     <>
-      <div id="BACKGROUND_COLOR" className="mb-0" style={mainDivStyle}>
+      <div id="BACKGROUND_COLOR" className="" style={mainDivStyle}>
         <div className="container">
-          <div className="row w-100">
-            <div className="col-12" >
+          <div className="row">
+            <div className="col-12 pb-3" >
               <img src={image} alt={alt} style={{backgroundColor: '#F2F4F8'}} className="img-fluid"></img>
               {newCaption}
             </div>

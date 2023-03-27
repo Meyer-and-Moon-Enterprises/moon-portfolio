@@ -4,7 +4,7 @@ export default function CaseHero({ color, preTitle, title, subtitle, overview, i
   return (
     <>
       <div className={`overflow-hidden`} style={{backgroundColor: color, minHeight: '493px'}}>
-        <div className='container' style={{height: '100%'}}>
+        <div className='container' style={{height: '100%', paddingLeft: '28px', paddingRight: '28px'}}>
           <div className='row' style={{height: '100%'}}>
             <div className='col-lg-6 d-flex flex-column justify-content-center'>
               <div className='mt-4'>

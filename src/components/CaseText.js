@@ -45,13 +45,13 @@ export default function CaseText({ title, description, listTitle, listItems}) {
     <>
       <div style={{backgroundColor: 'white'}}>
         <div className="container">
-          <div className="row pt-5 w-100">
+          <div className="row p-3">
             <div className="col-lg-4 pb-2">
               <h1 className="" style={{fontSize: '24px', lineHeight: '32px', fontFamily: 'Plex-semibold'}}>
                 {title}
               </h1>
             </div>
-            <div className="col-lg-8 pb-2">
+            <div className="col-lg-8  d-lg-block pb-2">
               {updatedDescription}
               {updatedListTitle}
               {updatedListItems}
