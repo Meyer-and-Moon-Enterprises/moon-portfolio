@@ -36,8 +36,7 @@ export default function energyReport() {
         <CaseText 
           title="Project goals"
           listItems={[
-            'Finalize project definition & appropriately scope for team size ',
-            'Restructure the information in the leadership report in a way that would be more accessible and retainable for non-scientific audience',
+            "Overhaul both annual environmental reports that are created by the Corporate Environmental Affairs team to be more enguaging and consumable by a non-scientific audience ",
             'Redesign the leadership report to align with the target user’s primary content consumption method of an iPad',
             'Create in-roads with the Corporate Environmental Affairs team to encourage future collaboration between the environmental and design arms at the company'
           ]}
@@ -49,8 +48,8 @@ export default function energyReport() {
           description={["I managed UX design, user research, and project expectations with stakeholders. Because this project was taken on by designers who were already fully-staffed on product teams, the initial ask needed to be scoped more appropriately."]}
           listItems={[
             'Finalize project definition & appropriately scope for team size ',
-            'Restructure the information in the leadership report in a way that would be more accessible and retainable for non-scientific audience ',
-            'Redesign the leadership report to align with the target user’s primary content consumption method of an iPad'
+            'Locate the key insights in the report and restructure the information in a way that’s more accessible and retainable for a non-scientific audience',
+            'Contribute low to mid fidelity design iterations and mockups for the reimagined leadership report'
           ]}
         />
 
