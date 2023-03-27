@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import styles from '@/styles/CaseText.module.css';
-import crypto from 'crypto';
 
 export default function CaseText({ title, description, listTitle, listItems}) {
   const [updatedDescription, setUpdatedDescription] = useState(['']);
