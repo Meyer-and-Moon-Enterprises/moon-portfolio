@@ -17,116 +17,116 @@ export default function energyReport() {
           title="Energy Report" 
           subtitle="strengthening the message " 
           overview="Each year IBM tracks its energy usage across the enterprise. As energy and climate issues become increasing more urgent, telling our story becomes much more essential. Enabling leadership to retain and speak to this topic secures a space for IBM in the global energy conversation. " 
-          image="/images/design-guide/design-guide-hero.png"
-          role='User Experience Design'
-          duration='Aug 2015 - May 2017'
-          industry='TechOps, DevOps, DesignOps, Internal Transformation'
+          image="/images/energy-report/energy-report-hero.png"
+          role='User Experience Design, DT facilitator'
+          duration='Jan 2019 - Jun 2019'
+          industry='Environmental reporting, corporate energy usage, renewable resources'
         />
 
         <CaseText
           title="The problem"
-          description={["As part of IBM's workplace transformation, product teams increasingly integrated third-party tools to foster radical collaboration, continuous deployment, and design thinking practices. However, the lack of a united selection & adoption strategy across teams left the company without a unified approach for addressing enterprise-level needs. Additionally, there was a need to develop an educational component to ensure that all team members can effectively adopt modern tools, regardless of their individual level of technological proficiency."]}
+          description={["The Corporate Environmental Affairs team produces two reports annually to showcase the company's energy usage and advancements on energy-related projects and goals. However, these reports are technical and filled with industry-specific scientific jargon that is difficult for non-industry personnel to retain and comprehend. The reports are delivered to company leadership and the general public, respectively. This project’s aim was to redesign how this essential information could be shared in a more consumable manner to the intended audiences."]}
         />
 
         <CaseImage 
-          image="/images/whitewater/cs-whitewater-image-01.png"
-          caption="Examples of internal tooling that motivated high performace product teams to adopt third-party tools."
+          image="/images/energy-report/cs-energy-report-image-01.png"
+          caption="2017 environmental report for the general public - 52 pages (on the left) and the environmental report for IBM leadership - 22 pages (on the right)."
         />
 
         <CaseText 
           title="Project goals"
           listItems={[
-            'Define a best-in-class toolchain for IBM product teams while simultaneously accepting tool requests outside of the defined toolchain',
-            'Mitigate security risks for already adopted tools by migrating existing teams over to SSO versions of tools & provide adoption guidelines ',
-            'Bring all existing licenses into view to enable a better negotiation position for the company',
-            'Design an experience where all IBMers can easily and quickly adopt new tooling',
-            'Provide training and educational content to ease tool adoption & integration into teams'
+            'Finalize project definition & appropriately scope for team size ',
+            'Restructure the information in the leadership report in a way that would be more accessible and retainable for non-scientific audience',
+            'Redesign the leadership report to align with the target user’s primary content consumption method of an iPad',
+            'Create in-roads with the Corporate Environmental Affairs team to encourage future collaboration between the environmental and design arms at the company'
           ]}
         
         />
 
         <CaseText
           title="My contributions & process"
-          description={["This was the first product team I was delployed onto during my time at IBM. My primary function on the team was user experience design. This product team was staffed with three other designers. "]}
+          description={["I managed UX design, user research, and project expectations with stakeholders. Because this project was taken on by designers who were already fully-staffed on product teams, the initial ask needed to be scoped more appropriately."]}
           listItems={[
-            'Designed tool request form experience and team editing experience for MVP launch',
-            'Collaborated closely with Slack design & engineering teams',
-            'Created wireframes, mockups, and prototypes for the internal “Slack Enterprise Bridge” experience that was needed before the official enterprise version of Slack was launched ',
-            'Design iterations of the Agile@IBM and IBMWhitewater merger project',
-            'User research and usability testing to validate design decisions and improve user experience of Whitewater'
-            
+            'Finalize project definition & appropriately scope for team size ',
+            'Restructure the information in the leadership report in a way that would be more accessible and retainable for non-scientific audience ',
+            'Redesign the leadership report to align with the target user’s primary content consumption method of an iPad'
           ]}
         />
 
         <CaseText 
-          title='Preparing for MVP'
-          description={['In order to get a feel for the company’s tooling demand we needed a way to track consumption & provisioning of licenses. We identified Whitewater teams as the best way to accomplish this. The first launch was very simple, teams could sign up for a Whitewater team and add their teammates. Adding their teammates would automatically provision the individual with all tool licenses. This was a simple solution for the requesting user but the requests would kickoff back office meetings and conversations with their manager about funding for the tools.']}
+          title='Project definition workshop'
+          description={['The requesting team had never worked with designers before, which created a break down in communication at first. In order to get a better understanding of what was being asked of us, I sent out a survey to stakeholders, synthesized the results and held a playback meeting to get into alignmnet. The team wanted help rethinking both reports and the redesign to be complete within 4 months. With only 3 designers, who were already staffed full-time on product teams, meeting this deadline wasn’t feasible. We compromised and focused on the report for IBM leadership.']}
         />
 
         <CaseImage
-          image="/images/whitewater/cs-whitewater-image-02.png"
-          caption="Lofi ideation on the tool request flow and flow maps of editing Whitewater teams."
-        />
-
-        <div className='spacer' style={{background: 'white'}}></div>
-
-        <CaseImage
-          image="/images/whitewater/cs-whitewater-image-03.png"
-          caption="The MVP Whitewater site launched with a focus on tools and teams."
+          image="/images/energy-report/cs-energy-report-image-02.png"
+          caption="Screenshots of the Mural where I synthesized survey results from stakeholders."
         />
 
         <CaseText 
-          title='Slack Enterprise Grid'
+          title='Collaboration & ideation'
           description={[
-            'After the launch of MVP the insane demand for Slack became obvious. A strong financial barrier to entry excluded many teams that were eager to adopt. This encouraged unsafe adoption and unintentionally created a divide between teams; the haves and have nots. While stakeholders & leaders more intensely focused on removing financial barriers, our team went to work building a solution to manage the hundreds of existing Slack teams. ',
-            'Because Slack’s initial target users were small, nimble teams they did not have a ready solution for enterprise-sized clients. Our team worked closely with our Slack partners. We delivered insights into how team and business units were structured at the company along with our stopgap solution as we eagerly awaited the release of Slack Enterprise Grid.  '
+            'The team got busy dissecting last years report. It was difficult to locate the essential pieces of information. We collaborated with the Corporate Environmental Affairs team, going through MANY iterations of the report’s information architecture (IA) until landing on a clear structure. After the IA was defined it was time to ideate on how the new report might be laid out and delivered. I spent time ideating on a simple handout-styled design. We ended up moving forward with a landscape-oriented design in the end to better suite the use of an iPad. ',
           ]}
         />
 
         <CaseImage
-          image="/images/whitewater/cs-whitewater-image-04.png"
-          caption='Along with a The Whitewater Slack team directoty (on the left) was the stopgap solution as we waited for the launch of Slack Enterprise Grid (on the right).copy of the IDL color palette, the CIO Design Guide provided color resources for common design tools used on the team. '
+          image="/images/energy-report/cs-energy-report-image-03.png"
+          caption='The input and output of the information architecture work (on left), lofi ideation of a simple handout (middle) and a midfi mockup of handout (on right). '
         />
 
         <CaseText
-          title='Tool training & education'
+          title='Ship it'
           description={[
-            'Once the great Slack fire drill was over, it was time for the team to focus on creating a solution around teaching agile practices. The team ideated on how to incorporate educational material by considering these questions: How do we teach just enough to get users interested in learning more on their own? How do we provide agile practices that users can adopt today/right now? How might we empower change agents within teams first? We came up with the concept of Patterns. These were bite sized pro-tips and practices created by experts in the context of IBM. '
+            'Below is the final version of the report that was sent to leadership. The designer, Mrinali Kamath, took the project into high fidelity and utilized the IBM Design Language to bring this report into brand alignment.  '
           ]}
         />
 
         <CaseImage
-          image="/images/whitewater/cs-whitewater-image-05.png"
-          caption='After a failed merger with the Agile Academy team, our team came up with the concept of Whitewater Patterns. '
-        />
-
-        <CaseText
-          title='Site architecture'
-          description={['Because the initial strategy for this project was to mimick the format of the IBM Design Language site, there was little thought about how the CIO Design Guide’s site architecture might need to differ. As the usability testing feedback rolled in it was clear that the initial version of the site’s architecture was confusing and dense. I was able to break out the CIO design specific guidelines from the base styles brought over by the IBM Design Language which made all the difference.']}
-        />
-
-        <CaseImage
-          image="/images/whitewater/cs-whitewater-image-05.png"
-          altBackgroundColor='#1F3647'
-        />
-
-        <CaseText
-          title="Evolution"
-          description={['Eventually, IBM Whitewater was integrated directly into the company’s intranet, resulting in a seamless experience for employees when it came to adopting and provisioning tools. As shown below, the "Favorite Tools" section on the w3 intranet home page includes popular tools such as Slack, Github, Mural, and ZenHub.']}
+          image="/images/energy-report/cs-energy-report-image-SPECIAL.png"
+          altBackgroundColor='#2e2e2e'
         />
 
         <CaseText
           title='Impact'
-          description={['In a span of two years, our team implemented a significant transformation in the way IBM employees work. We achieved this by adopting a modern toolchain, promoting transparency across teams, advocating for agile practices and design thinking, and promoting radical collaboration.']}
+          description={[
+            'Working with teams that have never interfaced with design before are some of my favorite projects. Everyone learns new skills and takes them back to their normal roles to help influence other teams around them.'
+          ]}
           listItems={[
-            'Fundamentally changed the process for adopting new tools by reducing the financial barrier',
-            'Within 6 months we onboarded more than 25% of the company a new modern tool that increased productivity & collaboration  ',
-            'Modern tools are now integrated onto the home page of the IBM intranet and available to all employees',
-            'Informed the design and functionality of the Slack Enterprise Grid by sharing the designs of the Whitewater Directory'
+            'Our redesign was praised by the CEO and SVPs ',
+            'Infuse another part of the company with design thinking and collaboration ',
+            'Directly influenced the ability of IBM leadership to better speak to energy & climate with their peers '
           ]}
         />
 
-        <div className='spacer d-lg-block' style={{backgroundColor: 'white'}} />
+        <div className="" style={{background: 'white', height: '30px'}}/>
+
+        <div style={{backgroundColor: 'white'}}>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-4">
+              </div>
+              <div className="col-lg-8">
+                <p style={{fontSize: '18px', lineHeight: '20px', fontFamily: 'Plex-regular'}}>
+                  “On behalf of Corporate Environmental Affairs we thank you for your help in improving the design of one of our flagship reports which we take pride in producing every year. 
+                </p>
+                <p style={{fontSize: '18px', lineHeight: '20px', fontFamily: 'Plex-regular'}}>
+                  It also did not escape us the fact that you volunteered to help us and you took on this extra work even though it had nothing to your regular responsibilities.  For this, we doubly THANK YOU! It was such a refreshing experience working with you, and I learned something.
+                </p>
+                <p style={{fontSize: '18px', lineHeight: '20px', fontFamily: 'Plex-regular'}}>
+                  You were confident yet respectful and above all, patient with the numerous iterations that we made. You reflect the best of IBM.  I hope our paths cross again and I wish you all the successes.” 
+                </p>
+                <p style={{fontSize: '16px', lineHeight: '20px', fontFamily: 'Plex-italic'}}>
+                  - VP of Environmental, Energy & Chemical Management Programs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="" style={{background: 'white', height: '20px'}}/>
+
         <div className="d-flex justify-content-center align-items-center w-100 pb-3 pt-3" style={{backgroundColor: 'white'}}>
           <p style={{fontFace: 'Plex-semibold', lineHeight: '20px', fontSize: '16px', background: 'white', textAlign: 'center'}}>
             The above case study is personal and does not necessarily represent IBM’s positions, strategies or opinions.

@@ -4,7 +4,7 @@ export default function CaseHero({ color, preTitle, title, subtitle, overview, i
   return (
     <>
       <div className={`overflow-hidden`} style={{backgroundColor: color, minHeight: '493px'}}>
-        <div className='container' style={{height: '100%', paddingLeft: '28px', paddingRight: '28px'}}>
+        <div className='container'>
           <div className='row' style={{height: '100%'}}>
             <div className='col-lg-6 d-flex flex-column justify-content-center'>
               <div className='mt-4'>
@@ -37,9 +37,9 @@ export default function CaseHero({ color, preTitle, title, subtitle, overview, i
           </div>
         </div>
       </div>
-      <div className='p-3' style={{backgroundColor: '#F2F4F8', minHeight: '108px'}}>
-        <Container style={{height: '100%'}}>
-          <div className='row d-block d-lg-flex align-items-center' style={{height: '100%'}}>
+      <div className='' style={{backgroundColor: '#F2F4F8'}}>
+        <Container style={{}}>
+          <div className='row pt-3 pb-2 d-lg-flex flex-column flex-xl-row align-items-center' >
             <div className={`col text-nowrap`}>
               <h3 style={{color: '#343434', lineHeight: '20px', fontSize: '16px', fontFamily: 'Plex-semibold'}}>
                 Role

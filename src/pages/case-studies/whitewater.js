@@ -17,7 +17,7 @@ export default function whitewater() {
           title="Whitewater" 
           subtitle="modernizing the workforce" 
           overview="Whitewater started as a grassroots movement but evolved into an official product team with the mission of implementing modern tooling and practices across IBM on a large scale. However, in a company with over 380,000 employees, strategic tool adoption and deployment posed significant challenges." 
-          image="/images/design-guide/design-guide-hero.png"
+          image="/images/whitewater/whitewater-hero.png"
           role='User Experience Design'
           duration='Aug 2015 - May 2017'
           industry='TechOps, DevOps, DesignOps, Internal Transformation'
@@ -101,19 +101,14 @@ export default function whitewater() {
         />
 
         <CaseText
-          title='Site architecture'
-          description={['Because the initial strategy for this project was to mimick the format of the IBM Design Language site, there was little thought about how the CIO Design Guide’s site architecture might need to differ. As the usability testing feedback rolled in it was clear that the initial version of the site’s architecture was confusing and dense. I was able to break out the CIO design specific guidelines from the base styles brought over by the IBM Design Language which made all the difference.']}
-        />
-
-        <CaseImage
-          image="/images/whitewater/cs-whitewater-image-05.png"
-          altBackgroundColor='#1F3647'
-        />
-
-        <CaseText
           title="Evolution"
           description={['Eventually, IBM Whitewater was integrated directly into the company’s intranet, resulting in a seamless experience for employees when it came to adopting and provisioning tools. As shown below, the "Favorite Tools" section on the w3 intranet home page includes popular tools such as Slack, Github, Mural, and ZenHub.']}
         />
+
+        <CaseImage
+          image="/images/whitewater/cs-whitewater-image-SPECIAL.png"
+          altBackgroundColor='#203646'
+          />
 
         <CaseText
           title='Impact'
@@ -126,7 +121,8 @@ export default function whitewater() {
           ]}
         />
 
-        <div className='spacer d-lg-block' style={{backgroundColor: 'white'}} />
+        <div className="" style={{background: 'white', height: '20px'}}/>
+
         <div className="d-flex justify-content-center align-items-center w-100 pb-3 pt-3" style={{backgroundColor: 'white'}}>
           <p style={{fontFace: 'Plex-semibold', lineHeight: '20px', fontSize: '16px', background: 'white', textAlign: 'center'}}>
             The above case study is personal and does not necessarily represent IBM’s positions, strategies or opinions.

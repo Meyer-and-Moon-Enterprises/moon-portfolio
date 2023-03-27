@@ -1,11 +1,10 @@
-import { Container } from 'react-bootstrap';
-import WorkCard from '../components/WorkCard';
+import WorkCard from './WorkCard';
 
 export default function WorkList () {
   return (
     <>
-      <Container className={`blackBackground`} fluid>
-        <Container className={`blackBackground`}>
+      <div className={`container blackBackground container-fluid`} >
+        <div className={`container blackBackground`}>
           <p className={`pt-5`} style={{fontWeight: 700, fontSize: '2rem', lineHeight: '2rem'}}>SELECT WORKS</p>
           <div className='row justify-content-between w-100'>
             <div className='col-12 col-xl-6'>
@@ -45,13 +44,13 @@ export default function WorkList () {
                 image='/images/ibm-annual-energy-card.png'
                 summary='2019  |  User Experience Design & Facilitation  |  IBM'
                 headline='Enable leadership to retain & speak to IBM’s role in the environmental climate conversation'
-                link='#'
+                link='/case-studies/energy-report'
               />
             </div>
           </div>
           <div className={`spacer`}></div>
-        </Container>
-      </Container>
+        </div>
+      </div>
     </>
   );
 }

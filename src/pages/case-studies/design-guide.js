@@ -143,8 +143,8 @@ export default function designGuide() {
           ]}
         />
 
-
-        <div className='spacer d-lg-block' style={{backgroundColor: 'white'}} />
+        <div className="" style={{background: 'white', height: '20px'}}/>
+        
         <div className="d-flex justify-content-center align-items-center w-100 pb-3 pt-3" style={{backgroundColor: 'white'}}>
           <p style={{fontFace: 'Plex-semibold', lineHeight: '20px', fontSize: '16px', background: 'white', textAlign: 'center'}}>
             The above case study is personal and does not necessarily represent IBM’s positions, strategies or opinions.
