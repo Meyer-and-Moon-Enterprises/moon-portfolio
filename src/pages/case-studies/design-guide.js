@@ -112,12 +112,12 @@ export default function designGuide() {
 
         <CaseText
           title='Site architecture'
-          description={['Because the initial strategy for this project was to mimick the format of the IBM Design Language site, there was little thought about how the CIO Design Guide’s site architecture might need to differ. As the usability testing feedback rolled in it was clear that the initial version of the site’s architecture was confusing and dense. I was able to break out the CIO design specific guidelines from the base styles brought over by the IBM Design Language which made all the difference.']}
+          description={['As the usability testing feedback rolled in it was clear that the initial version of the site’s architecture was confusing and dense. I was able to break out the CIO design specific guidelines from the base styles brought over by the IBM Design Language which made all the difference.']}
         />
 
         <CaseImage
           image="/images/design-guide/cs-design-guide-image06.png"
-          caption='Quick jump off points to popular sections and the design guidance table were highly requested by users.'
+          caption='The first version of the CIO Design Guide’s site map was confusing to users.'
         />
 
         <CaseText
@@ -139,7 +139,7 @@ export default function designGuide() {
             'With in the first month of MVP launch our Sketch libraries were downloaded 36 times (118 person design team)',
             'Observing less deviation from design guidance from design deliverables produced for CIO projects ',
             'Shortly after MVP; print, brand & logos, motion and storyboarding guidance were added to the guide',
-            'The work & research from this project served as the bedrock to additonal internal branding projects that came after it. Read more about internal branding at IBM. '
+            'The work & research from this project served as the bedrock to additonal internal branding projects that came after it.'
           ]}
         />
 

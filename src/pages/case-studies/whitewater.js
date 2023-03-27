@@ -85,7 +85,7 @@ export default function whitewater() {
 
         <CaseImage
           image="/images/whitewater/cs-whitewater-image-04.png"
-          caption='Along with a The Whitewater Slack team directoty (on the left) was the stopgap solution as we waited for the launch of Slack Enterprise Grid (on the right).copy of the IDL color palette, the CIO Design Guide provided color resources for common design tools used on the team. '
+          caption='The Whitewater Slack team directory (on the left) was the stopgap solution as we waited for the launch of Slack Enterprise Grid (on the right).'
         />
 
         <CaseText
