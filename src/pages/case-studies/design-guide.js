@@ -18,7 +18,7 @@ export default function designGuide() {
           subtitle="unifying the internal brand" 
           overview="IBM's workplace transformation led to a surge in demand for design assets from the Chief Information Office. The CIO design team expanded and took on numerous projects, but this growth inadvertently caused a lack of cohesion and double-work. To address these issues, the CIO Design Guide was created to unify the internal landscape, integrate a new design language, and reduce double-work." 
           image="/images/design-guide/design-guide-hero.png"
-          role='Research lead, User Experience Design, DT facilitator'
+          role='UX Research lead, Facilitator'
           duration='Oct 2018 - Apr 2019'
           industry='Internal branding, employee experience, workplace transformation'
         />
