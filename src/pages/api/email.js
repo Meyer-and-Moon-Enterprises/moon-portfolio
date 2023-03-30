@@ -18,7 +18,7 @@ export default function handler(req, res) {
     let info = transporter.sendMail({
       from: '"Ian M" <ianm1837@gmail.com>',
       to: process.env.EMAIL_SEND_TO,
-      subject: 'IMPORTANT! - A message from your portfolio!',
+      subject: `IMPORTANT! - A message from ${req.body.emailAddress}`,
       text: req.body.emailBody,
     })
 
