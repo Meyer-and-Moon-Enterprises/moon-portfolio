@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { AnimatePresence } from 'framer-motion';
 
+
 export default function App({ Component, pageProps }) {
 
   return (
