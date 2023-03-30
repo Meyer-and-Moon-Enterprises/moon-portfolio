@@ -1,14 +1,27 @@
-import { Container, Row, Col } from 'react-bootstrap';
-import { useState } from 'react';
+import { Container, Row, Col, Toast } from 'react-bootstrap';
+import { useState, useEffect, useRef } from 'react';
 
 export default function AboutComponent () {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  
-  // const [emailBody, setEmailBody] = useState('');
+
+  const [showToast, setShowToast] = useState(false);
+  const [toastMessage, setToastMessage] = useState('');
+
+  const toggleShowToast = () => setShowToast(!showToast);
+
+  const showToastNow = (e) => {
+    e.preventDefault()
+    setShowToast(true)
+  }
+
 
   const handleEmailSubmit = (e) => {
+
+    if(name === '' || email === '' || message === '') {
+      return
+    }
 
     let emailBody = `Name: ${name} \n\nEmail: ${email} \n\n\nMessage: ${message}`
 
@@ -23,13 +36,36 @@ export default function AboutComponent () {
         sendit: true,
         emailBody: emailBody,
       }),
-    })
+    }).then((res) => {
+      if(res.status === 200) {
+        setToastMessage('Message sent!')
+        setShowToast(true)
+
+
+        setName('')
+        setEmail('')
+        setMessage('')
+      }
+    }).catch((err) => {
+      setToastMessage('Message not sent. Please email me directly at: jemoon20@gmail.com')
+      setShowToast(true)
+
+      setName('')
+      setEmail('')
+      setMessage('')
+    }
+    )
 
   }
 
 
   return (
     <Container className={`blackBackground h-100`} fluid>
+      <div style={{top: '90px'}} className={`position-fixed start-50 translate-middle`}>
+        <Toast onClose={() => setShowToast(false)} delay={5000} className={`d-flex bottom-0 justify-content-center`} animation={true} bg={'primary'} show={showToast} autohide>
+          <Toast.Body>{toastMessage}</Toast.Body>
+        </Toast>
+      </div>
       <Container>
         <Row className={`spacer`} />
         <Row className={`pt-3`}>
@@ -134,16 +170,16 @@ export default function AboutComponent () {
             <form>
               <label className={``}>Name*</label>
               <div className={`w-100`}>
-                <input id='firstName' onChange={(e) => {setName(e.target.value)}} className={`form-control`} required />
+                <input value={name} id='firstName' onChange={(e) => {setName(e.target.value)}} className={`form-control`} required />
               </div>
               <label htmlFor='email' className={`form-label mt-3`}>
                 Email*
               </label>
-              <input id='email' onChange={(e) => {setEmail(e.target.value)}} className={`form-control`} required />
+              <input value={email} id='email' onChange={(e) => {setEmail(e.target.value)}} className={`form-control`} required />
               <label htmlFor='messageContent' className={`form-label mt-3`} >
                 Message*
               </label>
-              <textarea id='messageContent' onChange={(e) => {setMessage(e.target.value)}} className={`form-control`} style={{height: '153px'}} required></textarea>
+              <textarea value={message} id='messageContent' onChange={(e) => {setMessage(e.target.value)}} className={`form-control`} style={{height: '153px'}} required></textarea>
               <button type='submit' onClick={handleEmailSubmit} className={`btn btn-dark mt-3 mb-3`} style={{backgroundColor: 'black', borderColor: '#2e2e2e'}}>
                 Submit
               </button>
