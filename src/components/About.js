@@ -1,6 +1,33 @@
 import { Container, Row, Col } from 'react-bootstrap';
+import { useState } from 'react';
 
 export default function AboutComponent () {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  
+  // const [emailBody, setEmailBody] = useState('');
+
+  const handleEmailSubmit = (e) => {
+
+    let emailBody = `Name: ${name} \n\nEmail: ${email} \n\n\nMessage: ${message}`
+
+    e.preventDefault();
+
+    fetch('/api/email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        sendit: true,
+        emailBody: emailBody,
+      }),
+    })
+
+  }
+
+
   return (
     <Container className={`blackBackground h-100`} fluid>
       <Container>
@@ -107,17 +134,17 @@ export default function AboutComponent () {
             <form>
               <label className={``}>Name*</label>
               <div className={`w-100`}>
-                <input id='firstName' className={`form-control`} required />
+                <input id='firstName' onChange={(e) => {setName(e.target.value)}} className={`form-control`} required />
               </div>
               <label htmlFor='email' className={`form-label mt-3`}>
                 Email*
               </label>
-              <input id='email' className={`form-control`} required />
+              <input id='email' onChange={(e) => {setEmail(e.target.value)}} className={`form-control`} required />
               <label htmlFor='messageContent' className={`form-label mt-3`} >
                 Message*
               </label>
-              <textarea id='messageContent' className={`form-control`} style={{height: '153px'}} required></textarea>
-              <button type='submit' className={`btn btn-dark mt-3 mb-3`} style={{backgroundColor: 'black', borderColor: '#2e2e2e'}}>
+              <textarea id='messageContent' onChange={(e) => {setMessage(e.target.value)}} className={`form-control`} style={{height: '153px'}} required></textarea>
+              <button type='submit' onClick={handleEmailSubmit} className={`btn btn-dark mt-3 mb-3`} style={{backgroundColor: 'black', borderColor: '#2e2e2e'}}>
                 Submit
               </button>
             </form>
