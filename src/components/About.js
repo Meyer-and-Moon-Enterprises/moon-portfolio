@@ -35,6 +35,7 @@ export default function AboutComponent () {
       body: JSON.stringify({
         sendit: true,
         emailBody: emailBody,
+        emailAddress: email,
       }),
     }).then((res) => {
       if(res.status === 200) {
