@@ -6,14 +6,14 @@ export default function WorkList () {
         <div className={`container blackBackground`}>
           <p className={`pt-5`} style={{fontWeight: 700, fontSize: '2rem', lineHeight: '2rem'}}>SELECT WORKS</p>
           <div className='row justify-content-between w-100'>
-            {/* <div className='col-12 col-xl-6'>
+            <div className='col-12 col-xl-6'>
               <WorkCard
                 image='/images/singlefile-card.png'
                 summary='2020 - 2022  |  Senior Product Design  |  SingleFile Technologies'
                 headline='Bringing federal compliance, kicking and screaming, into the 21st century'
-                link='#'
+                link='/case-studies/singlefile'
               />
-            </div> */}
+            </div>
             <div className='col-12 col-xl-6'>
               <WorkCard
                 image='/images/composter-card.png'
