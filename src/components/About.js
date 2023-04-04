@@ -108,7 +108,8 @@ export default function AboutComponent () {
                     <li>Communication (all types)</li>
                     <li>Design leadership</li>
                     <li>Project management</li>
-                    <li>Cross-functional team leadership Facilitation</li>
+                    <li>Cross-functional team leadership</li>
+                    <li>Facilitation</li>
                   </ul>
                 </div>
               </div>
@@ -127,7 +128,8 @@ export default function AboutComponent () {
                     <li>Communication (all types)</li>
                     <li>Design leadership</li>
                     <li>Project management</li>
-                    <li>Cross-functional team leadership Facilitation</li>
+                    <li>Cross-functional team leadership</li>
+                    <li>Facilitation</li>
                   </ul>
                 </div>
                 <div className={`d-none d-lg-block`} style={{borderTop: '2px solid #2e2e2e', width: '40%',}}>
@@ -160,7 +162,7 @@ export default function AboutComponent () {
             <p className='h2'>CONTACT ME</p>
             <p className='pt-3'>
               Thank you for stopping by and taking a look at my work! Due to the
-              internal-facing nature of many if my projects I am only able to
+              internal-facing nature of many of my projects I am only able to
               showcase a tightly curated sample of my work in public spaces. If
               you would like to see more or have questions about my process,
               reach out! I’d love to take you through the nitty-gritty of it
