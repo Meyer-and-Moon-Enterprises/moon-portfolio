@@ -53,7 +53,7 @@ export default function CaseHero({
                     fontFamily: 'Plex-regular',
                     color: 'white',
                     lineHeight: '20px',
-                    fontSize: '16px',
+                    fontSize: '18px',
                   }}
                 >
                   {overview}
