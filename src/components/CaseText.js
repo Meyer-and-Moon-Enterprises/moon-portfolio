@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import styles from '@/styles/CaseText.module.css';
+import { v4 as randomUUID } from 'uuid';
 
 export default function CaseText({ title, description, listTitle, listItems }) {
   const [updatedDescription, setUpdatedDescription] = useState(['']);
@@ -11,13 +12,13 @@ export default function CaseText({ title, description, listTitle, listItems }) {
       setUpdatedDescription(() => {
         return description.map((item) => (
           <p
-            key={crypto.randomUUID()}
+            key={randomUUID()}
             className=''
             style={{
               fontFamily: 'Plex-regular',
               color: '#black',
               lineHeight: '28px',
-              fontSize: '16px',
+              fontSize: '18px',
             }}
           >
             {item}
@@ -29,13 +30,13 @@ export default function CaseText({ title, description, listTitle, listItems }) {
       setUpdatedListTitle(() => {
         return (
           <p
-            key={crypto.randomUUID()}
+            key={randomUUID()}
             className=''
             style={{
               fontFamily: 'Plex-semibold',
               color: '#black',
               lineHeight: '28px',
-              fontSize: '16px',
+              fontSize: '18px',
             }}
           >
             {listTitle}
@@ -52,12 +53,12 @@ export default function CaseText({ title, description, listTitle, listItems }) {
               fontFamily: 'Plex-regular',
               color: '#black',
               lineHeight: '28px',
-              fontSize: '16px',
+              fontSize: '18px',
             }}
           >
             {listItems.map((item) => (
               <li
-                key={crypto.randomUUID()}
+                key={randomUUID()}
                 className={styles.specialListItem}
                 style={{
                   marginBottom: '7px',
