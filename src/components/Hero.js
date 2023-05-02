@@ -8,7 +8,7 @@ export default function Hero () {
       <Container 
         className={`hero w-100 m-0`}
         style={{
-          height: '100vh', //calc(100vh - 3.5rem)
+          height: '838px', //calc(100vh - 3.5rem)
           backgroundImage: 'url(/images/hero-background.jpg)',
           backgroundRepeat: 'no-repeat',
           backgroundColor: 'black',
