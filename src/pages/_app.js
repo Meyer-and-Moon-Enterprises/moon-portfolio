@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { AnimatePresence } from 'framer-motion';
+import GoogleAnalytics from '@bradgarropy/next-google-analytics';
 
 
 export default function App({ Component, pageProps }) {
@@ -15,6 +16,9 @@ export default function App({ Component, pageProps }) {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <title>Genuine Jesse</title>
       </Head>
+
+      <GoogleAnalytics measurementId='G-SZES6HZZJM'/>
+
       <Navbar />
       <AnimatePresence mode="wait" initial={false}>
 
