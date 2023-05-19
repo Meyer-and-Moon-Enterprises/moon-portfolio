@@ -10,7 +10,7 @@ export default function WorkList () {
               <WorkCard
                 image='/images/singlefile-card.png'
                 summary='2020 - 2022  |  Senior Product Design  |  SingleFile Technologies'
-                headline='Bringing federal compliance, kicking and screaming, into the 21st century'
+                headline='Reducing the administrative headaches and anxiety of federal compliance'
                 link='/case-studies/singlefile'
               />
             </div>

@@ -23,10 +23,7 @@ export default function Hero () {
               <div 
                 className={`pt-3`}
                 style={{fontSize: '1.6rem'}}>
-                I am a Senior Product Designer, expert facilitator and cat
-                herder. Currently based out of the greater Seattle area and
-                looking for my next role. Welcome to my portfolio site,
-                check-ch-check-check-check-ch-check it out.
+                I am a product designer with a passion for solving complex problems, improving the human condition and understanding things holistically.
               </div>
             </div>
             <div className='col-4'></div>
