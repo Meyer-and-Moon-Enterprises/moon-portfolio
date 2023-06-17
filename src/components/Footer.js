@@ -16,7 +16,11 @@ export default function Footer () {
               <a href='https://dribbble.com/jessemoon'><img className={`img-fluid`} style={{height: '26px'}} src='/images/basketball.png'></img></a>
             </div>
           </Row>
-          <div className={`separator`}></div>
+        </Container>
+      </Container>
+      <div className={`separator`}></div>
+      <Container className={`blackBackground`} fluid>
+        <Container className={`blackBackground`}>
           <Row
             className={`d-flex flex-row justify-content-between align-items-center`}
             style={{height: '100px'}}

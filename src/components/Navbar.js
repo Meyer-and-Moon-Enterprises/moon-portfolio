@@ -9,7 +9,7 @@ export default function NavBar () {
       <Container className={``}>
         <Navbar.Brand>
           <Link href="/work" style={{textDecoration: 'none', color: 'white'}}>
-            GENUINE JESSE
+            JESSE MOON
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
