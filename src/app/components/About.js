@@ -1,3 +1,4 @@
+"use client"
 import { Container, Row, Col, Toast } from 'react-bootstrap';
 import { useState, useEffect, useRef } from 'react';
 

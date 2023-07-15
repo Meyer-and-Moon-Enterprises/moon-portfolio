@@ -1,6 +1,7 @@
+"use client"
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import Link from 'next/link';
-import { Router, useRouter } from 'next/router';
+import { Router, useRouter } from 'next/navigation';
 
 export default function NavBar () {
   const router = useRouter();

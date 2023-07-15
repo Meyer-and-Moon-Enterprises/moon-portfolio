@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import CaseHero from '@/components/CaseHero';
-import CaseText from '@/components/CaseText';
-import CaseImage from '@/components/CaseImage';
+import CaseHero from '@/app/components/CaseHero';
+import CaseText from '@/app/components/CaseText';
+import CaseImage from '@/app/components/CaseImage';
 
 export default function grassboots() {
   return (

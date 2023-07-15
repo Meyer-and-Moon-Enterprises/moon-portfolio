@@ -1,3 +1,4 @@
+"use client"
 import { Container, Row } from 'react-bootstrap';
 
 export default function Footer () {
