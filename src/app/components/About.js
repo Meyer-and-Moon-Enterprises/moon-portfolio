@@ -1,3 +1,4 @@
+"use client"
 import { Container, Row, Col, Toast } from 'react-bootstrap';
 import { useState, useEffect, useRef } from 'react';
 
@@ -151,7 +152,7 @@ export default function AboutComponent () {
           <Col className='d-none d-lg-flex d-flex justify-content-center'>
             <div className={``}>
               <picture>
-                <img className='img-fluid' src='/images/about-image.png'></img>
+                <img className='img-fluid' style={{borderRadius: '20px'}} src='/images/about-image.png'></img>
               </picture>
             </div>
           </Col>
