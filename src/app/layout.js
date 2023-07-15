@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '@/styles/globals.css';
 import Navbar from '@/app/components/Navbar';
 import Footer from '@/app/components/Footer';
-
+import { IBMPlexSans } from './fonts';
 import { PHProvider } from './providers'
 
 export const metadata = {
