@@ -1,0 +1,23 @@
+.listContainer {
+  list-style-type: none;
+  /* padding: 0; */
+}
+
+.specialListItem {
+  overflow-wrap: break-word;
+  line-height: 1.2rem;
+  position: relative;
+  left: 0;
+  padding-left: 1rem;
+}
+
+.specialListItem::before {
+  content: "•";
+  line-height: 28px;
+  font-size: 18px;
+  vertical-align: top;
+  left: 0;
+  top: -2px;
+  position: absolute;
+  width: 0;
+}

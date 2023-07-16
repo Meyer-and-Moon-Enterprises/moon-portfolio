@@ -3,22 +3,41 @@
   "hidefiles.globalConfig": {
     "profiles": [
       {
-        "name": "Default",
+        "name": "Code",
         "detail": "",
         "description": "Test",
         "hidden": [
           ".vscode/",
           "nextjs-blog/node_modules/",
           "node_modules/",
-          "nextjs-blog/package-lock.json"
-        ]
+          "nextjs-blog/package-lock.json",
+          ".next/",
+          ".github/",
+          ".env.EXAMPLE",
+          ".gitignore",
+          ".prettierignore",
+          ".prettierrc.json",
+          "next.config.js",
+          "postcss.config.js",
+          "tailwind.config.js",
+          "jsconfig.json",
+          "package-lock.json",
+          "package.json",
+          "package.json"
+        ],
+        "peek": []
       },
       {
-        "name": "Strict",
-        "detail": "Hide everything not immediately required",
         "hidden": [
-          "$Default"
-        ]
+          "styles/",
+          "public/",
+          "node_modules/",
+          "app/"
+        ],
+        "name": "Config",
+        "description": "",
+        "detail": "",
+        "peek": []
       }
     ]
   },
@@ -27,7 +46,23 @@
     "**/.svn": true,
     "**/.hg": true,
     "**/CVS": true,
-    "**/.DS_Store": true
+    "**/.DS_Store": true,
+    ".vscode/": true,
+    "nextjs-blog/node_modules/": true,
+    "node_modules/": true,
+    "nextjs-blog/package-lock.json": true,
+    ".next/": true,
+    ".github/": true,
+    ".env.EXAMPLE": true,
+    ".gitignore": true,
+    ".prettierignore": true,
+    ".prettierrc.json": true,
+    "next.config.js": true,
+    "postcss.config.js": true,
+    "tailwind.config.js": true,
+    "jsconfig.json": true,
+    "package-lock.json": true,
+    "package.json": true
   },
-  "hidefiles.selectedProfile": "Show All Files"
+  "hidefiles.selectedProfile": "Code"
 }
