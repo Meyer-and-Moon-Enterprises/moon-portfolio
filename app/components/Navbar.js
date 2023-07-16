@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 export default function NavBar() {
   const pathname = usePathname();
   return (
-    <div className={`flex bg-black items-center sticky top-0 h-14 z-50`}>
+    <nav className={`flex bg-black items-center sticky top-0 h-14 z-50`}>
       <div className={`container flex justify-between`}>
         <Link
           href='/work'
@@ -28,6 +28,6 @@ export default function NavBar() {
           </Link>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }

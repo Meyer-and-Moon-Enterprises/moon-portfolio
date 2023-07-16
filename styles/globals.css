@@ -43,20 +43,6 @@
   font-weight: 300;
 }
 
-/* html {
-  min-height: 100%;
-  background-color: black;
-} */
-
-/* body {
-  min-height: 100%;
-} */
-
-/* .blackBackground {
-  background-color: black;
-  color: white;
-} */
-
 .whiteFont {
   color: white;
 }
@@ -65,10 +51,10 @@
   height: 4rem;
 }
 
-.separator {
+/* .separator {
   height: 2px;
-  border-top: 2px solid #2e2e2e;
-}
+  border-top: 2px solid rgb(46, 46, 46);
+} */
 
 .form-control,
 .form-control:focus {

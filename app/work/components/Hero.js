@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
-    <div className={`m-0 h-screen`}>
-      <div className='container h-100'>
+    <div className={`mb-52`}>
+      <div className='container'>
         <div className='h-24'></div>
         <div className='flex align-items-center justify-content-center'>
           <div className={`col-md-7 text-light`}>
