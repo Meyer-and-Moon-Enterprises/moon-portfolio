@@ -1,45 +1,34 @@
 "use client";
-import { Container, Nav, Navbar } from "react-bootstrap";
 import Link from "next/link";
-import { Router, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 export default function NavBar() {
-  const router = useRouter();
+  const pathname = usePathname();
+  console.log(pathname)
   return (
-    <Navbar
-      className={`blackBackground sticky-top`}
-      style={{ height: "3.5rem" }}
-      variant='dark'
-    >
-      <Container className={``}>
-        <Navbar.Brand>
-          <Link href='/work' style={{ textDecoration: "none", color: "white" }}>
-            JESSE MOON
+    <div className={`flex bg-black items-center sticky top-0 h-14 border `}>
+      <div className={`container border flex justify-between`}>
+        <Link
+          href='/work'
+          className={"text-white text-xl no-underline decoration-0 decoration-white"}
+        >
+          JESSE MOON
+        </Link>
+        <div className={"flex items-center "}>
+          <Link
+            className={"pr-1 " + (pathname === "/work" ? " text-white" : " text-current")}
+            href='/work'
+          >
+            Work
           </Link>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-        <Navbar.Collapse id='responsive-navbar-nav'>
-          <Nav className='me-auto'></Nav>
-          <Nav>
-            <Link
-              className={
-                "nav-link pb-1 " + (router.pathname === "/work" ? "active" : "")
-              }
-              href='/work'
-            >
-              Work
-            </Link>
-            <Link
-              className={
-                "nav-link " + (router.pathname === "/about" ? "active" : "")
-              }
-              href='/about'
-            >
-              About
-            </Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+          <Link
+            className={"pl-1 " + (pathname === "/about" ? " text-white" : "text-current")}
+            href='/about'
+          >
+            About
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 }
